@@ -20,11 +20,11 @@ Go to the project directory and install the dependencies.
 
 ## Installing dependencies
 
-Make sure your in the project folder:
+### Make sure your in the project folder:
 
 cd the-movie-database-project
 
-The use this code to install all neccessary packages:
+### The use this code to install all neccessary packages:
 
 npm install
 
