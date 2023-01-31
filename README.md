@@ -13,6 +13,7 @@ Clone the repository to your local machine.
 
 ## Copy code
 git clone git@github.com:AntonJonsson94/the-movie-database-project.git
+
 Go to the project directory and install the dependencies.
 
 
