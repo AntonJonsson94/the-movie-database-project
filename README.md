@@ -28,10 +28,10 @@ npm start
 The development server will start and the project will be available at http://localhost:1234/.
 
 ## Built With
-AJAX - Used for asynchronous communication with the server.
-TypeScript - Used for static typing and object-oriented programming.
-SASS - Used for styling the project.
-HTML - Used for creating the structure of the project.
+- AJAX - Used for asynchronous communication with the server.
+- TypeScript - Used for static typing and object-oriented programming.
+- SASS - Used for styling the project.
+- HTML - Used for creating the structure of the project.
 
 ## License
 This project is licensed under the MIT License.
