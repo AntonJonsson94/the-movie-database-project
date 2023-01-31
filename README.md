@@ -18,7 +18,7 @@ git clone "git@github.com:AntonJonsson94/the-movie-database-project.git"
 Go to the project directory and install the dependencies.
 
 
-## Copy code
+## Installing dependencies
 
 cd the-movie-database-project
 
