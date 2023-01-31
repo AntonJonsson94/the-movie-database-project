@@ -11,16 +11,13 @@ Before you start, make sure you have Node.js installed on your machine.
 ## Installation
 Clone the repository to your local machine.
 
-## Copy code
+## Cloning the project
 
 <sub>git clone "git@github.com:AntonJonsson94/the-movie-database-project.git"</sub>
 
-Go to the project directory and install the dependencies.
-
-
 ## Installing dependencies
 
-### Make sure your in the project folder:
+### Make sure you're in the project folder:
 
 <sub> cd the-movie-database-project </sub>
 
