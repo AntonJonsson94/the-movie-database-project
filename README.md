@@ -24,7 +24,7 @@ Go to the project directory and install the dependencies.
 
 cd the-movie-database-project
 
-### The use this code to install all neccessary packages:
+### Then run this code to install all neccessary packages:
 
 npm install
 
