@@ -13,7 +13,7 @@ Clone the repository to your local machine.
 
 ## Copy code
 
-git clone "git@github.com:AntonJonsson94/the-movie-database-project.git"
+<sub>git clone "git@github.com:AntonJonsson94/the-movie-database-project.git"</sub>
 
 Go to the project directory and install the dependencies.
 
@@ -22,11 +22,11 @@ Go to the project directory and install the dependencies.
 
 ### Make sure your in the project folder:
 
-cd the-movie-database-project
+<sub> cd the-movie-database-project </sub>
 
 ### Then run this code to install all neccessary packages:
 
-npm install
+<sub> npm install </sub>
 
 ## Usage
 After the installation is complete, start the development server with the following command:
