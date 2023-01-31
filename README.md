@@ -17,11 +17,11 @@ Clone the repository to your local machine.
 
 ## Installing dependencies
 
-### Make sure you're in the project folder:
+Make sure you're in the project folder:
 
 <sub> cd the-movie-database-project </sub>
 
-### Then run this code to install all neccessary packages:
+Then run this code to install all neccessary packages:
 
 <sub> npm install </sub>
 
