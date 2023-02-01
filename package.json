@@ -4,7 +4,7 @@
     "parcel": "^2.8.3",
     "sass": "^1.57.1"
   },
-  "name": "css-training",
+  "name": "the-movie-database",
   "version": "1.0.0",
   "main": "/srcr/ts/app.js",
   "source": "src/index.html",
