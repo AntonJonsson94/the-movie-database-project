@@ -10,31 +10,40 @@
     <body>
         <main class="flex">
             <nav class="nav-bar">
-                <p class="nav-menu">Home</p>
-                <p class="nav-menu">Top Movies</p>
-                <p class="nav-menu">Top TV Shows</p>
+                <p class="nav-menu" id="home">Home</p>
+                <p class="nav-menu" id="top-movies">Top Movies</p>
+                <p class="nav-menu" id="top-tv">Top TV Shows</p>
 
-                <form>
+                <form class="form">
                     <input
                         type="text"
                         placeholder="search for movie"
                         class="submit"
                         id="input"
                     />
-                    <input type="submit" class="submit-btn" id="submit" />
+                    <input
+                        type="submit"
+                        class="submit-btn"
+                        value="Search"
+                        id="submit"
+                        onclick="toggleVisibility()"
+                    />
                 </form>
 
                 <p class="nav-menu" id="watchlist-button">Your Watchlist</p>
             </nav>
         </main>
         <main class="grid">
-            <section class="content">
-                <h5 class="header" id="trending">Trending</h5>
+            <section class="content" id="trending-tab">
+                <h5 class="header">Trending</h5>
+                <sectionid id="trending"></section>
             </section>
-            <section class="content"></section>
-            <div class="content">
+
+            <section class="content" id="main-content">Hello</section>
+
+            <section class="content" id="watchlist-tab">
                 <h5 class="header">Your WatchList</h5>
-            </div>
+            </section>
         </main>
     </body>
 </html>

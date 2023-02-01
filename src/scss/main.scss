@@ -4,10 +4,23 @@
     color: aliceblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url("https://thumbs.gfycat.com/AdorableDapperGallowaycow-size_restricted.gif");
-  
 }
+
+@mixin gridLayout(){
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+    
+}
+@mixin posterDesign(){
+            height: 30%;
+            justify-content: center;
+            border-radius: 10;
+}
+
 body{
     background: black;
+    
 }
 @mixin buttonStyle{
     position: relative;
@@ -15,80 +28,108 @@ body{
     max-height: 25px;
 }
 
-.flex .nav-bar{
+.flex{
+ .nav-bar{
+     position: sticky;
     @include flexCenter();
     border: 1px solid black;
     gap: 25;
     padding: 5; 
-}
+ }
+    .nav-menu{
+        &:hover{
+            transform: scale(1.2);
+            transition-duration: 500ms;
+           
+        }
+    }
+    .submit{
+        @include buttonStyle();
+        &:hover{
+            background-color: rgb(255, 255, 255);
+            transition-duration: 500ms;
+        }
+    }
+    .nav-bar .submit-btn{
+        @include buttonStyle();
+        right: 5px;
+        &:hover{
+            background-color: rgb(166, 166, 166);
+            transition-duration: 500ms;
+        }
+    }
 
-.flex .nav-menu{
-    &:hover{
-        transform: scale(1.2);
-        transition-duration: 500ms;
-       
-    }
-}
-.submit{
-    @include buttonStyle();
-    &:hover{
-        background-color: rgb(255, 132, 132);
-        transition-duration: 500ms;
-    }
-}
-.nav-bar .submit-btn{
-    @include buttonStyle();
-    right: 5px;
-    &:hover{
-        background-color: rgb(134, 235, 79);
-        transition-duration: 500ms;
-    }
+    
+
 }
 .grid{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
     
+    @include gridLayout();
+    width: fit-content;
     
+    .content{
+        background: black;
+        margin: 10;
+        border-radius: 10px;
+        padding: 50px;
+        border: 1px solid black;
+        height: 70rem;
+        justify-content: space-between;
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+        text-align: center;
+        
+        
+        
+    }
+    .header{
+        
+        background: -webkit-linear-gradient(rgb(88, 205, 255), #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: xx-large;
+        text-align: center;
+        
     
-}
-.grid .content{
-    background: gray;
-    margin: 10;
-    border-radius: 10px;
-    padding: 50px;
-    border: 1px solid black;
-    height: 80rem;
-    justify-content: space-between;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
+    }
     
+    #trendingcard{
+        
+        position: relative;
+        right: 20;
+        margin-top: 30;
+        background: rgb(0, 0, 0);
+        color: white;
+        width: fit-content;
+        padding-top: 50;
+        padding-left: 10;
+        padding-right: 10;
+        padding-top: 50;
+        
+    }
+        .trending-poster{
+            @include posterDesign();
     
-}
-.grid .form{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 150px;
-}
-.grid .header{
-    font-size: larger;
-    justify-content: center;
-    text-align: center;
-    text-decoration-line: underline;
+    }
+    #main-content{
+        background-color: white;
 
-}
-#trendingcard{
-    margin-top: 30;
-    
-  
-   
+        .searched-movie-poster{
+            @include posterDesign();
+        }
 
+
+    }
+    }
+    
+    
+    
+
+
+.p{
+    color: white;
 }
-.trending-poster{
-    height: 30%;
-    justify-content: center;
-    border-radius: 10;
-}
+
 .wrapper{
     background: blue;
 
@@ -103,3 +144,30 @@ body{
     color: red;
     transition-duration: 500ms;
 }
+.content .trending-buttons{
+    
+    margin-bottom: 50;
+
+    
+}
+
+
+  
+
+@media(max-width: 400px){
+    #trending-tab, #watchlist-tab, #top-tv, #top-movies, #home {
+        display: none;
+    }
+    .flex{
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        height: 5rem;
+    
+    }
+}
+#input{
+height: 1000px;
+    }
+   
+  
