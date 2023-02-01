@@ -161,3 +161,4 @@ function printSearchResults() {
         searchedMovieCard.appendChild(movieRatingCard);
     }
 }
+console.log;
